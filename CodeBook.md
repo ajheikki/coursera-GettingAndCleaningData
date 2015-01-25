@@ -74,7 +74,7 @@ Moreover, the script assigns column names and merges different data sets togethe
 
 #Step 2. Extract only the measurements on the mean and standard deviation for each measurement.
 
- Subset only those columns from the merged data set that contain activityID, subjectID, 'mean' or 'std' (standard deviation) in their column names to keep only the necessary columns. However, 'meanFreq' columns are excluded.
+The script subsets only those columns from the merged data set that contain activityID, subjectID, 'mean' or 'std' (standard deviation) in their column names to keep only the necessary columns. However, 'meanFreq' columns are excluded.
 
 #Step 3. Use descriptive activity names to name the activities in the data set
 
@@ -82,7 +82,7 @@ Merge the data from step 2 with the activityType labels to inlude the descriptiv
 
 #Step 4. Appropriately label the data set with descriptive activity names.
 
-Use gsub function for pattern replacement in order to clean the data labels (column names).
+Use gsub function to clean the data labels (column names).
 
 #Step 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
