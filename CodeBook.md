@@ -2,7 +2,7 @@
 
 #Description
 
-This code book describes the variables, the data, and transformations that are performed to clean the data.
+This code book describes the variables, the data, and transformations that are performed by run_analysis.R to clean the data.
 
 # Source Data
 
