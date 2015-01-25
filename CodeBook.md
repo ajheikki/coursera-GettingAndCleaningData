@@ -56,10 +56,10 @@ The following files are available for the train and test data. Their description
 
 Data transformations implemented in run_analysis.R script
 =============================
+There are 5 parts:
 
 #Section 1. Merge the training and the test sets to create one data set.
-
-After setting the source directory for the files, read into tables the data located in
+After setting the source directory for the files, the script reads in tables located in
 
     features.txt
     activity_labels.txt
@@ -70,19 +70,19 @@ After setting the source directory for the files, read into tables the data loca
     x_test.txt
     y_test.txt
 
-Assign column names and merge to create one data set.
+Moreover, the script assigns column names and merges different data sets together.
 
 #Section 2. Extract only the measurements on the mean and standard deviation for each measurement.
 
-Create a logcal vector that contains TRUE values for the ID, mean and stdev columns and FALSE values for the others. Subset this data to keep only the necessary columns.
+ Subset only those columns from the merged data set that contain activityID, subjectID, 'mean' or 'std' (standard deviation) in their column names to keep only the necessary columns. However, 'meanFreq' columns are excluded.
 
 #Section 3. Use descriptive activity names to name the activities in the data set
 
-Merge data subset with the activityType table to cinlude the descriptive activity names
+Merge the data from step 2 with the activityType labels to inlude the descriptive activity names
 
 #Section 4. Appropriately label the data set with descriptive activity names.
 
-Use gsub function for pattern replacement to clean up the data labels.
+Use gsub function for pattern replacement in order to clean the data labels (column names).
 
 #Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
