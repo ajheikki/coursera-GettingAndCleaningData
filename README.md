@@ -22,4 +22,4 @@ run_analysis.R script implements the following given requirements:
 1. Download the source data and save the unzipped UCI HAR Dataset folder into a folder X.
 2. Save run_analysis.R script into the parent folder of the UCI HAR Dataset (into the same folder X)
 3. Open the run_analysis.R script and set the R working directory to the parent directory by modifying the setwd() command at the beginning of the script.
-4. Run run_analysis.R. It generates a new file tidyData.txt in your working directory. This is the tidy data file required in the task.
+4. Run run_analysis.R. It generates a new file tidyData.txt to the working directory. This is the tidy data file required in the task.
