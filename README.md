@@ -17,7 +17,7 @@ run_analysis.R script implements the following given requirements:
 4. Appropriately labels the data set with descriptive activity names.
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-# Steps to work on this course project
+# How to use the script
 
 1. Download the source data and save UCI HAR Dataset folder into a folder.
 2. Save run_analysis.R script in the parent folder of the UCI HAR Dataset
