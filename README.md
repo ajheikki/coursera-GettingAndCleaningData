@@ -11,15 +11,15 @@ Project source data can be obtained from here: https://d396qusza40orc.cloudfront
 # Task and implementation
 run_analysis.R script implements the following given requirements:
 
-    1. Merges the training and the test sets to create one data set.
-    2. Extracts only the measurements on the mean and standard deviation for each measurement.
-    3. Uses descriptive activity names to name the activities in the data set
-    4. Appropriately labels the data set with descriptive activity names.
-    5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive activity names.
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 # Steps to work on this course project
 
-    - Download the source data and save UCI HAR Dataset folder into a folder.
-    - Save run_analysis.R script in the parent folder of the UCI HAR Dataset
-    - Open the run_analysis.R script and set the R working directory to the parent directory by modifying the setwd() command at the beginning of the script.
-    - Run run_analysis.R. It generates a new file tidyData.txt in your working directory. This is the tidy data file required in the task.
+1. Download the source data and save UCI HAR Dataset folder into a folder.
+2. Save run_analysis.R script in the parent folder of the UCI HAR Dataset
+3. Open the run_analysis.R script and set the R working directory to the parent directory by modifying the setwd() command at the beginning of the script.
+4. Run run_analysis.R. It generates a new file tidyData.txt in your working directory. This is the tidy data file required in the task.
