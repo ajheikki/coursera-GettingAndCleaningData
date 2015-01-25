@@ -58,7 +58,7 @@ Data transformations implemented in run_analysis.R script
 =============================
 There are 5 parts:
 
-#Section 1. Merge the training and the test sets to create one data set.
+#Step 1. Merge the training and the test sets to create one data set.
 After setting the source directory for the files, the script reads in tables located in
 
     features.txt
@@ -72,44 +72,19 @@ After setting the source directory for the files, the script reads in tables loc
 
 Moreover, the script assigns column names and merges different data sets together.
 
-#Section 2. Extract only the measurements on the mean and standard deviation for each measurement.
+#Step 2. Extract only the measurements on the mean and standard deviation for each measurement.
 
  Subset only those columns from the merged data set that contain activityID, subjectID, 'mean' or 'std' (standard deviation) in their column names to keep only the necessary columns. However, 'meanFreq' columns are excluded.
 
-#Section 3. Use descriptive activity names to name the activities in the data set
+#Step 3. Use descriptive activity names to name the activities in the data set
 
 Merge the data from step 2 with the activityType labels to inlude the descriptive activity names
 
-#Section 4. Appropriately label the data set with descriptive activity names.
+#Step 4. Appropriately label the data set with descriptive activity names.
 
 Use gsub function for pattern replacement in order to clean the data labels (column names).
 
-#Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+#Step 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject
-
-
-# Transformation details
-
-There are 5 parts:
-
-1.Merges the training and the test sets to create one data set.
-    After setting the source directory for the files, script reads in tables located in
-
-    features.txt
-    activity_labels.txt
-    subject_train.txt
-    x_train.txt
-    y_train.txt
-    subject_test.txt
-    x_test.txt
-    y_test.txt
-
-    Moreover, the script assigns column names and merges different data sets together.
-
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
-    Uses descriptive activity names to name the activities in the data set
-    Appropriately labels the data set with descriptive activity names.
-    Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
+Summarizes data by using aggregate function to calculate mean of each variable for each activity and each subject. Orders the data and changes column order. Writes the results into an output file named as tidyData.txt
 
