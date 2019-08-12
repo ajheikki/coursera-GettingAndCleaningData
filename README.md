@@ -1,6 +1,6 @@
 ## Coursera - Getting and Cleaning Data - Course Project
 
-This is a repository for the course project for the Coursera Getting and Cleaning Data course.
+This is a repository for the course project for the Coursera Getting and Cleaning Data course (2015).
 
 # Used data
 A description of the data used in this project can be found at: 
